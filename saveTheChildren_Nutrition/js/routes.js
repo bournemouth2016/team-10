@@ -28,16 +28,34 @@ angular.module('app.routes', [])
     controller: 'homeCtrl'
   })
 
-  .state('selectExistingFamily', {
+  .state('selectExistingIndividual', {
     url: '/page9',
-    templateUrl: 'templates/selectExistingFamily.html',
-    controller: 'selectExistingFamilyCtrl'
+    templateUrl: 'templates/selectExistingIndividual.html',
+    controller: 'selectExistingIndividualCtrl'
   })
 
-  .state('newFamily', {
+  .state('newIndividual', {
     url: '/page10',
-    templateUrl: 'templates/newFamily.html',
-    controller: 'newFamilyCtrl'
+    templateUrl: 'templates/newIndividual.html',
+    controller: 'newIndividualCtrl'
+  })
+
+  .state('currentFoodHabits', {
+    url: '/page11',
+    templateUrl: 'templates/currentFoodHabits.html',
+    controller: 'currentFoodHabitsCtrl'
+  })
+
+  .state('reccomendedFoods', {
+    url: '/page12',
+    templateUrl: 'templates/reccomendedFoods.html',
+    controller: 'reccomendedFoodsCtrl'
+  })
+
+  .state('page', {
+    url: '/page13',
+    templateUrl: 'templates/page.html',
+    controller: 'pageCtrl'
   })
 
 $urlRouterProvider.otherwise('/page6')
