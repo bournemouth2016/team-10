@@ -52,10 +52,10 @@ angular.module('app.routes', [])
     controller: 'reccomendedFoodsCtrl'
   })
 
-  .state('page', {
+  .state('report', {
     url: '/page13',
-    templateUrl: 'templates/page.html',
-    controller: 'pageCtrl'
+    templateUrl: 'templates/report.html',
+    controller: 'reportCtrl'
   })
 
 $urlRouterProvider.otherwise('/page6')
